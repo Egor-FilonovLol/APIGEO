@@ -28,7 +28,9 @@
 
 Получения токена
 ```POST api/v1/token/```
+
 Тело запроса
+
 ```
 {
     "username":
@@ -48,36 +50,45 @@
 
 Создать точку на карте
 ```POST /api/v1/points/```
+
 Тело запроса
-```{
+```
+{
     "name":
         "Name_Token",
     "latitude": 
         "-41.243433",
     "longitude": 
         "-21.432323"
-}```
+}
+```
 
 Ответ(201 created)
-```{
+```
+{
     "id": 1,
     "name": "Name_Token",
     "lat": -41.243433,
     "lon": -21.432323,
     "description": ""
-}```
+}
+```
 
 Создать сообщение к точке
 ```POST api/v1/points/1/messages/```
+
 Тело запроса
-```{
+```
+{
     "message": 
         "Required_Message_For_Point" 
-}```
+}
+```
 
 
 Ответ (201 created)
-```{
+```
+{
     "id": 1,
     "message": "Required_Message_For_Point",
     "location": {
@@ -87,14 +98,16 @@
         "lon": -21.432323
     },
     "author": "egor"
-}```
+}
+```
 
 
 Поиск точки в заданном радиусе
 ```GET /api/v1/points/search/?latitude=-40&longitude=-20&radius=200```
 
 Ответ
-```[
+```
+[
     {
         "id": 1,
         "name": "Name_Token",
@@ -102,11 +115,15 @@
         "lon": -21.432323,
         "description": ""
     }
-]```
+]
+```
 
 
 Поиск точек в радиусе
 ```GET /api/v1/messages/search/?latitude=-39&longitude=-42&radius=1800```
+
+Ответ
+```
 [
     {
         "id": 1,
@@ -120,3 +137,4 @@
         "author": "egor"
     }
 ]
+```
