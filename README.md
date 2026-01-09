@@ -80,7 +80,7 @@
 }
 ```
 
-**Ответ(201 created)**
+**Ответ(201 created):**
 
 ```
 {
@@ -109,7 +109,7 @@
 ```
 
 
-**Ответ (201 created)**
+**Ответ (201 created):**
 
 ```
 {
@@ -131,7 +131,7 @@
 
 ```GET /api/v1/points/search/?latitude=-40&longitude=-20&radius=200```
 
-**Ответ**
+**Ответ:**
 
 ```
 [
@@ -150,7 +150,7 @@
 
 ```GET /api/v1/messages/search/?latitude=-39&longitude=-42&radius=1800```
 
-**Ответ**
+**Ответ:**
 
 ```
 [
