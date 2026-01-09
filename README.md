@@ -14,9 +14,13 @@
 Установка и как запустить проект
 
 1. Клонировать репозиторий
+   
 ```git clone https://github.com/Egor-FilonovLol/APIGEO.git```
+
 2. Собрать образ и запустить контейнер.
+ 
  ```docker-compose up --build```
+
 
 
 ### SWAGGER-URL
