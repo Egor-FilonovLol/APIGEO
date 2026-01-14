@@ -18,7 +18,9 @@ API для работы с гео-точками
 **Требования  к проекту**
 
 Python 3.11 или выше
+
 Docker version 28.5.1 или выше
+
 Docker Compose version v2.40.2 или выше 
 
 
